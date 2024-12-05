@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "pre-build": "rm -rf dist",
+    "pre-build": "shx rm -rf dist/*",
     "build-dev": "parcel build index.html --no-optimize",
     "build-prod": "parcel build index.html --no-source-maps --public-url ./",
     "deploy": "gh-pages -d dist"
@@ -15,6 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.13.2",
-    "parcel": "^2.13.2"
+    "gh-pages": "^6.2.0",
+    "parcel": "^2.13.2",
+    "shx": "^0.3.4"
   }
 }
