@@ -1,0 +1,20 @@
+{
+  "name": "social-links-profile",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social links profile coding challenge](./preview.jpg)",
+  "source": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "pre-build": "rm -rf dist",
+    "build-dev": "parcel build index.html --no-optimize",
+    "build-prod": "parcel build index.html --no-source-maps --public-url ./",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Bruna Godoi Machado",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.2",
+    "parcel": "^2.13.2"
+  }
+}
